@@ -1,0 +1,1 @@
+fin, fout = open("tester.in"), open("tester.out", "w")# This code was from file "playground.py"

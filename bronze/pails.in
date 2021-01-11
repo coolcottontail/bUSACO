@@ -1,0 +1,41 @@
+17 25 77
+
+
+# Background & Color Match
+
+word = 'Bunnybunnybunny'
+colors = [Fore.LIGHTRED_EX + Back.RED, Fore.LIGHTYELLOW_EX + Back.YELLOW, Fore.LIGHTGREEN_EX+ Back.GREEN, Fore.LIGHTCYAN_EX + Back.CYAN, Fore.BLUE, Fore.MAGENTA]
+colors*=  len(word)
+colors = colors[0:len(word)]
+for x in range(len(colors)):
+    print(colors[x] + word[x], end='')
+
+print(Fore.RESET + Back.RESET)
+
+# Color Only
+
+
+word = 'Bunnybunnybunny'
+colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA]
+colors*=  len(word)
+colors = colors[0:len(word)]
+for x in range(len(colors)):
+    print(colors[x] + word[x], end='')
+
+print(Back.RESET + Fore.RESET)
+
+# Pure color background
+
+colors = [Back.RED, Back.YELLOW, Back.GREEN, Back.CYAN, Back.BLUE, Back.MAGENTA]
+for x in range(len(colors)):
+    print(colors[x])
+
+print(Back.RESET + Fore.RESET)
+
+# Pure color background (Light)
+
+colors = [Back.LIGHTRED_EX, Back.LIGHTYELLOW_EX, Back.LIGHTGREEN_EX, Back.LIGHTCYAN_EX, Back.LIGHTBLUE_EX, Back.LIGHTMAGENTA_EX]
+for x in range(len(colors)):
+    print(colors[x])
+
+print(Back.RESET + Fore.RESET)
